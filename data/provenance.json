@@ -1,0 +1,13 @@
+{
+  "master": {
+    "name": "384kHzStereo.wav",
+    "url": "https://drive.google.com/file/d/0B0Swx_1rwA6XX29wUGFwQlJNN00/view",
+    "sha256": "05f8b49202133d399da3d84c19fee1df77e15056098ace452564a05a9a986b37",
+    "bytes": 1455685720,
+    "provenance_limit": "Public community-shared preservation copy; not a NASA-hosted authenticated original disc capture."
+  },
+  "cover": {
+    "url": "https://science.nasa.gov/wp-content/uploads/2024/03/voyager-record-cover-446eb9.jpg",
+    "sha256": "eac79258cc229db4de1234afa4c8d64a158d287f8c6ee59e175535f0e86b5502"
+  }
+}
