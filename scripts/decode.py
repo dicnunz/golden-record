@@ -87,8 +87,8 @@ def main():
     np.savez_compressed(out/'calibration.npz',raw_raster=raw,corrected_raster=z,resets=p,rate=sr,pedestal=pedestal,inverse_ac_tau=recovery_tau)
   print('channel',channel,'planes',len(frames),'rejected',len(bad),flush=True)
  (out/'manifest.json').write_text(json.dumps({'source_sha256':sha(ROOT/'data/master.wav'),'sample_rate':int(rate),'source_channels':source.shape[1],'calibration_circle':circle_measurement,'inverse_ac_time_constant_samples':recovery_tau,'planes':manifest,'rejected_preambles':rejections,'scope':'Grayscale raster planes, not a claimed assembly of all 116 photographs or their RGB channels.'},indent=2))
- contact=Image.new('RGB',(1280,math_ceil(len(preview)/4)*260),(12,13,15));dr=ImageDraw.Draw(contact)
- for i,im in enumerate(preview):contact.paste(im.resize((304,round(display_height*304/512))),(i%4*320+8,i//4*260+24));dr.text((i%4*320+8,i//4*260+5),f'PLANE {i:03d}',fill=(210,210,200))
- contact.save(out/'contact.png')
+ from render_demo import contact_sheet
+ contact_sheet()
+
 def math_ceil(x):return int(np.ceil(x))
 if __name__=='__main__':main()
