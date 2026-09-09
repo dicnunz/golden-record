@@ -1,4 +1,4 @@
-# Sagan
+# Golden Record
 
 Voyager Golden Record signal decoder. Recovers 156 grayscale raster planes from a stereo preservation recording.
 
