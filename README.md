@@ -1,13 +1,21 @@
 # Golden Record
 
-[Explore recorded results](https://dicnunz.github.io/demos/golden-record/).
-[Browser inspection source](web/index.html). Open `web/index.html` locally to explore the recorded results; no server or install is needed. Validate the bundle with `python3 scripts/verify_web.py` and `node tests/web_controls.cjs`.
-
 Voyager Golden Record signal decoder. Recovers 156 grayscale raster planes from a stereo preservation recording.
+
+[Explore recorded results](https://dicnunz.github.io/demos/golden-record/)
 
 [Video](demo/sagan.mp4) · [Decoded planes](output/) · [Method](docs/method.md)
 
 [![Recovered calibration raster](demo/poster.png)](demo/sagan.mp4)
+
+## Inspect locally
+
+Open [web/index.html](web/index.html) in a browser; no installation is needed. To check the saved assets and controls:
+
+```sh
+python3 scripts/verify_web.py
+node tests/web_controls.cjs
+```
 
 ## Run
 
